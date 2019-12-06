@@ -66,6 +66,11 @@ bool CheckAccept (char CHECK,       // IN - the character will been check
  ************************/
 string UppercaseWord(string name);
 
+/***********************
+ * convert temperature
+ **********************/
+float ConvertTemp(string temp, float value);
+
 
 #endif /* HEADER_H_ */
 

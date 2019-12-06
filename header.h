@@ -30,7 +30,7 @@ void PrintHeader(string programmer, // IN - programmer's name
 /************************************
  * find largest number in the array
  ***********************************/
-int MaxAr(int arr[], int size, int max);
+int MaxAr(int arr[], int size);
 
 /************************************
  * find smallest number in the array
@@ -44,32 +44,38 @@ void SepretAr(int list[],int list1[], int list2[],int size);
 
 
 
-/*******************************************************
+/**********************************************************************
  * STRING
- ******************************************************/
+ *********************************************************************/
 
-/**********************************************************
-* check is input the letter you want
-***********************************************************/
-char CheckLetter();
-
-/**********************************************************
+/**********************************
 * check is the value in the range
-***********************************************************/
+***********************************/
 bool CheckAccept (char CHECK,       // IN - the character will been check
 		          int  value,       // IN - the checked value
 				  const int  min,   // IN - the minimum value for range
 				  const int  max);  // IN - the maximum value for range
+
+/************************************
+* check is input the letter you want
+*************************************/
+char CheckLetter();
+
+/*****************************************
+ * check how many VOWELS char in a word
+ *****************************************/
+int CheckVowels(string word);
+
+/***********************
+ * convert temperature
+ **********************/
+float ConvertTemp(string temp, float value);
 
 /***********************
  * upper case your word
  ************************/
 string UppercaseWord(string name);
 
-/***********************
- * convert temperature
- **********************/
-float ConvertTemp(string temp, float value);
 
 
 #endif /* HEADER_H_ */

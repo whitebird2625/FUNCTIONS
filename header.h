@@ -1,11 +1,10 @@
-
-
 #ifndef HEADER_H_
 #define HEADER_H_
 
 #include <iostream>
 #include <iomanip>
 #include <string>
+#include <cctype>
 using namespace std;
 
 /***********************************************************************
@@ -19,54 +18,38 @@ using namespace std;
 void PrintHeader(string programmer, // IN - programmer's name
 		         int    studentID,  // IN - student's id number
 		         string asName,     // IN - assignment Name
-					int asNum,      // IN - assignment number
-				   char asType);    // IN - assignment type
+				 int    asNum,      // IN - assignment number
+				 char   asType);    // IN - assignment type
 								    // 'L' = Lab,
 								    // 'A' = Assignment
 
 /**********************************************************
-* FUNCTION CheckLetter
-*_________________________________________________________
-* This function receives an letter
-* then check is (??????????).
-*_________________________________________________________
-* PRE-CONDITIONS
-* The following parameters need to have a defined value prior to
-* calling the function:
-*
-* letter - (??????????)
-*
-* POST-CONDITIONS
-* This function will return a char value.
+* check is input the letter you want
 ***********************************************************/
 char CheckLetter();
 
-
 /**********************************************************
-* FUNCTION CheckAccept
-*_________________________________________________________
-* This function receives the gender, a integer value and the object
-* then returns - true if it been accept
-*                false if it not.
-*_________________________________________________________
-* PRE-CONDITIONS
-* The following parameters need to have a defined value prior to
-* calling the function:
-*
-* CHECK    : the chacter you will check
-* value    : the checked value
-* min      : the minimum value for range
-* max      : the maximum value for range
-*
-* POST-CONDITIONS
-* This function will returns - true if it been accept
-*                              false if it not.
+* check is the value in the range
 ***********************************************************/
 bool CheckAccept (char CHECK,       // IN - the character will been check
 		          int  value,       // IN - the checked value
 				  const int  min,   // IN - the minimum value for range
 				  const int  max);  // IN - the maximum value for range
 
+/************************************
+ * find largest number in the array
+ ***********************************/
+int MaxAr(int arr[], int size, int max);
+
+/************************************
+ * find smallest number in the array
+ ***********************************/
+int MinAr(int arr[], int size);
+
+/***********************
+ * upper case your word
+ ************************/
+string UppercaseWord(string name);
 
 #endif /* HEADER_H_ */
 

@@ -23,6 +23,31 @@ void PrintHeader(string programmer, // IN - programmer's name
 								    // 'L' = Lab,
 								    // 'A' = Assignment
 
+/*************************************************************
+ * ARRAY
+ ******************************************************************/
+
+/************************************
+ * find largest number in the array
+ ***********************************/
+int MaxAr(int arr[], int size, int max);
+
+/************************************
+ * find smallest number in the array
+ ***********************************/
+int MinAr(int arr[], int size);
+
+/**********************************
+ * separate number into two arrays
+ **********************************/
+void SepretAr(int list[],int list1[], int list2[],int size);
+
+
+
+/*******************************************************
+ * STRING
+ ******************************************************/
+
 /**********************************************************
 * check is input the letter you want
 ***********************************************************/
@@ -36,20 +61,11 @@ bool CheckAccept (char CHECK,       // IN - the character will been check
 				  const int  min,   // IN - the minimum value for range
 				  const int  max);  // IN - the maximum value for range
 
-/************************************
- * find largest number in the array
- ***********************************/
-int MaxAr(int arr[], int size, int max);
-
-/************************************
- * find smallest number in the array
- ***********************************/
-int MinAr(int arr[], int size);
-
 /***********************
  * upper case your word
  ************************/
 string UppercaseWord(string name);
+
 
 #endif /* HEADER_H_ */
 

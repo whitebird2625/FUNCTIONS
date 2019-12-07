@@ -11,6 +11,7 @@ int MinAr(int arr[], int size)
 	int min;
 
 	min = arr[0];
+
 	for (index = 1; index < size; index++)
 	{
 		if (arr[index] < min)
@@ -18,6 +19,7 @@ int MinAr(int arr[], int size)
 			min = arr[index];
 		}
 	}
+
 	return min;
 }
 

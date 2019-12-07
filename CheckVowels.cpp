@@ -20,9 +20,9 @@ int CheckVowels(string word)
 				 word[index] == 'u' || word[index] == 'y';
 
 		if (vowels)
-			{
-				count += 1;
-			}
+		{
+			count += 1;
+		}
 	}
 
 	return count;

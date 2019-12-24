@@ -86,6 +86,10 @@ string UppercaseWord(string name);
  **********************/
 float ConvertTemp(string temp = "f", float value);
 
+/***********************
+ * Draw lines of stars
+ **********************/
+void DrawStar(int lines);
 
 #endif /* HEADER_H_ */
 

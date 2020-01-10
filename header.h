@@ -46,6 +46,10 @@ void SepretAr(int list[],
 			  int list2[],
 			  int size);
 
+/***********************************
+ * Selection Sorting (Min - Max)
+ **********************************/
+void SelectionSort (int list[], int size);
 
 
 /*******************************************************************************

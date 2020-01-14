@@ -5,6 +5,7 @@
 #include <iomanip>
 #include <string>
 #include <cctype>
+#include <cmath>
 using namespace std;
 
 /***********************************************************************
@@ -94,6 +95,21 @@ float ConvertTemp(string temp = "f", float value);
  * Draw lines of stars
  **********************/
 void DrawStar(int lines);
+
+/************************************
+ * Change Binary to Decimal
+ ***********************************/
+void BinToDec(long binNum, int &decimal, int &weight);
+
+/***************************************
+ * Change Decimal to Binary
+ **************************************/
+void DecToBin(int decimal);
+
+/************************************
+ * Fibonacci Number
+ ***********************************/
+int FibNumber(int a,int b, int n);
 
 #endif /* HEADER_H_ */
 
